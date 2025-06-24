@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Feedback Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Feedback Form Heading -->
+  <h2>Feedback Form</h2>
+
+  <!-- Form starts here -->
+  <form method="post">
+
+    <!-- Name input -->
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" minlength="3" maxlength="50" required><br><br>
+
+    <!-- Portfolio input -->
+    <label for="portfolio">Portfolio</label>
+    <input type="url" id="portfolio" name="portfolio" required><br><br>
+
+    <!-- Favorite color input -->
+    <label for="favColor">Favorite Color</label>
+    <input type="color" id="favColor" name="favColor"><br><br>
+
+    <!-- Likeness range input -->
+    <label for="likeness">Likeness</label>
+    <input type="range" id="likeness" name="likeness" min="1" max="100"><br><br>
+
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+
+  </form>
+
+  <!-- Optional JavaScript file -->
+  <script type="text/javascript" src="./script.js"></script>
 
 </body>
-
 </html>
